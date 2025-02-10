@@ -1,0 +1,67 @@
+/* Reset default margins, paddings, and set box-sizing */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Remove list styles */
+ul, ol {
+  list-style: none;
+}
+
+/* Remove default link styles */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Set a base font size and inherit for consistency */
+html {
+  font-size: 16px;
+  line-height: 1.5;
+  scroll-behavior: smooth;
+}
+
+/* Set base styles for body */
+body {
+  font-family: sans-serif;
+  background-color: #fff;
+  color: #333;
+}
+
+/* Make images and videos responsive */
+img, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Remove border from fieldsets */
+fieldset {
+  border: none;
+}
+
+/* Reset button styles */
+button {
+  all: unset;
+  cursor: pointer;
+}
+
+/* Remove input styles in Safari */
+input,
+textarea,
+select,
+button {
+  font: inherit;
+  border: none;
+  outline: none;
+}
+
+/* Remove default styles from tables */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
