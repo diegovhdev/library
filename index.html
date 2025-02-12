@@ -9,7 +9,7 @@
 </head>
 <body>
     <section class="book-form-section">
-        <button>Libro Nuevo</button>
+        <button id="toggle-book-form-btn" class="toggle-book-form">Libro Nuevo</button>
         <form action="" id="add-book-form" class="book-form">
             <div>
                 <label for="title">Título:</label>
@@ -23,7 +23,11 @@
                 <label for="pages">Paginas:</label>
                 <input type="text" inputmode="numeric" pattern="[0-9]*" name="pages" id="pages">
             </div>
-            <button>añadir</button>
+            <div>
+                <label for="read">Leido</label>
+                <input type="checkbox" name="read" id="read">
+            </div>
+            <button id="add-book-btn" class="add-book">añadir</button>
         </form>
     </section>
     <script src="script.js" defer></script>
