@@ -1,14 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Library</title>
 </head>
 <body>
-    
+    <section class="book-form-section">
+        <button>Libro Nuevo</button>
+        <form action="" id="add-book-form" class="book-form">
+            <div>
+                <label for="title">Título:</label>
+                <input type="text" name="title" id="title">
+            </div>
+            <div>
+                <label for="author">Autor:</label>
+                <input type="text" name="author" id="author">
+            </div>
+            <div>
+                <label for="pages">Paginas:</label>
+                <input type="text" inputmode="numeric" pattern="[0-9]*" name="pages" id="pages">
+            </div>
+            <button>añadir</button>
+        </form>
+    </section>
     <script src="script.js" defer></script>
 </body>
 </html>
