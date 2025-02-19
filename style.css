@@ -1,5 +1,6 @@
 body {
   font-family: 'Roboto', sans-serif;
+  height: 100vh;
 }
 
 /*BOOK FORM SECTION*/
@@ -34,7 +35,7 @@ body {
   font-weight: 500;
 }
 
-.book-form input[type='text'] {
+.book-form input[type='text'], .book-form input[type='number'] {
   border: 2px solid white;
   border-radius: 5px;
   padding: 2px;
@@ -42,7 +43,7 @@ body {
   width: 100%;
 }
 
-.book-form input[type='text']:focus {
+.book-form input[type='text']:focus, .book-form input[type='number']:focus {
   border-color: #89A8B2;
 }
 
@@ -70,4 +71,21 @@ body {
 .btn-style:active {
   background-color: #3e575f;
   transition: background-color 0.4s;
+}
+
+/*REMOVE ARROWS THAT DEFAULT FOR NUMBER TYPE INPUT*/
+/* For Chrome, Safari, Edge, and Opera */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* For Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.hide {
+  visibility: hidden;
 }
