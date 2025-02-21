@@ -4,7 +4,7 @@ body {
 }
 
 /*BOOK FORM SECTION*/
-.book-form-section {
+.book-form-header {
   display: flex;
   position: relative;
   justify-content: space-between;
@@ -13,7 +13,7 @@ body {
   background-color: #d1dee2;
 }
 
-.book-form-section h1 {
+.book-form-header h1 {
   font-size: 1.6rem;
 }
 
