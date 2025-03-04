@@ -53,15 +53,22 @@ body {
 
 /*BUTTON STYLES*/
 .btn-style {
-  font-size: 1.125rem;
   font-weight: 500;
   border: 3px solid #3e575f;
   align-self: center;
   background-color: #3e575f;
   color: white;
-  padding: 8px 14px;
   border-radius: 12px;
   transition: background-color 0.8s;
+}
+
+.book-form-header .btn-style {
+  font-size: 1.125rem;
+  padding: 8px 14px;
+}
+
+.book-card .btn-style {
+  padding: 4px 10px;
 }
 
 .btn-style:hover {
@@ -88,4 +95,26 @@ input[type="number"] {
 
 .hide {
   visibility: hidden;
+}
+
+
+/*MAIN: BOOK GRID*/
+
+.book-grid {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  justify-content: start;
+  gap: 16px;
+}
+
+.book-card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 12px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 16px;
 }
