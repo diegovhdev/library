@@ -32,7 +32,7 @@ Book.prototype.convertToHtml = function(index) {
     const buttonRead = document.createElement("button");
     buttonRead.textContent = this.read ? "no leído" : "leído";
     buttonRead.classList.add("btn-style")
-    buttonRead.dataset.index = index;
+    buttonRead.dataset.index = index
     buttonRead.addEventListener("click", onToggleReadStatus)
 
     bookCard.appendChild(pAuthor);
@@ -115,7 +115,9 @@ function onHideBookForm(event) {
 }
 
 function onToggleReadStatus(event) {
-    myLibrary[event.target.dataset.index].toggleReadStatus();
+    const element = event.target;
+    const index = element.dataset.index || element.parentElement.dataset.index || element.parentElement.parentElement.dataset.index;
+    myLibrary[index].toggleReadStatus();
     renderLibrary();
 }
 
